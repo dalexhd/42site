@@ -44,9 +44,9 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Sabías que las hormigas son uno de los insectos mas inteligentes del planeta?
+          ¿Sabías que las hormigas son uno de los insectos más inteligentes del planeta?
           <br></br>
-          Resulta que al trabajar en grupo consiguen hacer cosas inimaginables, como crear puentes para cruzar un obstaculo etc...
+          Resulta que al trabajar en grupo consiguen hacer cosas inimaginables, como crear puentes para cruzar un obstáculo etc.
         </p>
         <div className={styles.grid}>
           <label htmlFor="hash">Introduce el hash</label>
