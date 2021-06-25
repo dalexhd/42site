@@ -6,21 +6,6 @@ import rocketGif from '../public/images/rocket.gif'
 import { useRouter } from 'next/router'
 
 export default function Home() {
-	const [hash, setHash] = useState('');
-	const router = useRouter();
-
-	const checkHash = function () {
-		fetch('/api/verify?hash=' + hash, {
-			method: "POST"
-		})
-			.then(response => response.json())
-			.then(data => {
-				if (typeof data.redirect !== "undefined") {
-					router.push(data.redirect, undefined, { shallow: true });
-				}
-			});
-	}
-
 	return (
 		<div className={styles.container + " dark:bg-gray-800"}>
 			<Head>
