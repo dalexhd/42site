@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Qr from "../public/images/87CAB92F954677DAF6D33438EFC34C.png";
+import Image from 'next/image'
 
 export default function Home() {
 
