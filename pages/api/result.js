@@ -7,7 +7,7 @@ export default function handler(req, res) {
 		if (seconds > 40 && seconds < 44) {
 			res.status(200).json({ redirect: '/final_9A8B629166BADCE64D5A7E99CDCFF' });
 		} else {
-			res.status(429).json({ error: 'Rate limit exceed. Please retry in 42 second' });
+			res.status(429).json({ error: 'Rate limit exceed. Please retry in "42" second' });
 		}
 	} else {
 		res.status(400).json({ error: 'Bad method!' })

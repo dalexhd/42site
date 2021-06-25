@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Qr from "../public/images/499E72BE74381DBBD63182268B8749.png";
+import Qr from "../public/images/last_68E663A14525275CA52424A3AACDF.png";
 import Image from 'next/image'
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
       <h1 className={styles.title}>
-          3/8
+          3/4
         </h1>
         <Image src={Qr} height={350} width={350} />
       </main>

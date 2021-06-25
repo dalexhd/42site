@@ -15,7 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          1/8
+          1/4
         </h1>
         <p className="justify-center">Pide a un compañer@ que escaneé este código QR. Recuerda, este proceso se tiene que hacer 8 veces, y con distintas personas.</p>
         <Image src={Qr} height={350} width={350} />

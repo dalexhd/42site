@@ -15,7 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
       <h1 className={styles.title}>
-          2/8
+          2/4
         </h1>
         <Image src={Qr} height={350} width={350} />
       </main>
