@@ -17,7 +17,7 @@ export default function Home() {
         <h1 className={styles.title}>
           1/4
         </h1>
-        <p className="justify-center">Pide a un compañer@ que escaneé este código QR. Recuerda, este proceso se tiene que hacer 8 veces, y con distintas personas.</p>
+        <p className="justify-center">Pide a un compañer@ que escaneé este código QR. Recuerda, este proceso se tiene que hacer 4 veces, y con distintas personas.</p>
         <Image src={Qr} height={350} width={350} />
       </main>
 

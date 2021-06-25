@@ -2,11 +2,11 @@
 import { useState, useEffect } from "react";
 
 export default function Example() {
-  const [counter, setCounter] = useState(6);
+  const [counter, setCounter] = useState(20);
   if (process.browser) {
     setTimeout(() => {
       document.querySelectorAll(".hero-header").forEach((el) => el.remove());
-    }, 6000);
+    }, 20000);
   }
   useEffect(() => {
     counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
