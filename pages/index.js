@@ -49,8 +49,8 @@ export default function Home() {
           Resulta que al trabajar en grupo consiguen hacer cosas inimaginables, como crear puentes para cruzar un obstáculo etc.
         </p>
         <div className={styles.grid}>
-          <label htmlFor="hash">Introduce el hash</label>
-          <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Hash" value={hash} onChange={e => setHash(e.target.value)}></input>
+          <label htmlFor="hash">Introduce la clave secreta</label>
+          <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Clave" value={hash} onChange={e => setHash(e.target.value)}></input>
         </div>
         <div className={styles.grid}>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={checkHash}>
