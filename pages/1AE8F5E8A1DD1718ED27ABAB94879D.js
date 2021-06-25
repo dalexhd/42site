@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Qr from "../public/images/1AE8F5E8A1DD1718ED27ABAB94879D.svg";
+import Image from 'next/image'
+import Qr from "../public/images/2CFC9CAB44CFECDC69E9C8F5821D6F.png";
 
 export default function Home() {
 
@@ -16,8 +17,8 @@ export default function Home() {
         <h1 className={styles.title}>
           1/8
         </h1>
-        <p className="justify-center">Pide a un compañer@ que escanee este código QR. Recuerda, este proceso se tiene que hacer 8 veces, y con distintas personas.</p>
-        <Qr style={{ height: 350 }} />
+        <p className="justify-center">Pide a un compañer@ que escaneé este código QR. Recuerda, este proceso se tiene que hacer 8 veces, y con distintas personas.</p>
+        <Image src={Qr} height={350} width={350} />
       </main>
 
       <footer className={styles.footer}>

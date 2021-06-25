@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Qr from "../public/images/87CAB92F954677DAF6D33438EFC34C.svg";
+import Qr from "../public/images/last_68E663A14525275CA52424A3AACDF.png";
 
 export default function Home() {
 
@@ -16,7 +16,7 @@ export default function Home() {
       <h1 className={styles.title}>
           8/8
         </h1>
-        <Qr style={{ height: 350 }} />
+        <Image src={Qr} height={350} width={350} />
       </main>
 
       <footer className={styles.footer}>
