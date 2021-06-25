@@ -14,7 +14,8 @@
     "@svgr/webpack": "^5.5.0",
     "next": "11.0.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-hotjar": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
