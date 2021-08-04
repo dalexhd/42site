@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import 'react-modal-video/scss/modal-video.scss';
 
 import { hotjar } from 'react-hotjar';
 

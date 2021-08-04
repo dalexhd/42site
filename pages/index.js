@@ -3,9 +3,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router'
+import ModalVideo from 'react-modal-video'
 
 export default function Home() {
   const [hash, setHash] = useState('');
+  const [isOpen, setOpen] = useState(false);
   const router = useRouter();
 
   const checkHash = function () {
@@ -42,12 +44,10 @@ export default function Home() {
         <h1 className={styles.title}>
           Bienvenido al reto de 42 🚀
         </h1>
-
-        <p className={styles.description}>
-          ¿Sabías que las hormigas son uno de los insectos más inteligentes del planeta?
-          <br></br>
-          Resulta que al trabajar en grupo consiguen hacer cosas inimaginables, como crear puentes para cruzar un obstáculo etc.
-        </p>
+        { process.browser && <ModalVideo cli channel='youtube' showinfo={0} autoplay controls={0} isOpen={isOpen} videoId="KQjc9Kx_t9I" onClose={() => setOpen(false)} /> }
+        <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-10" onClick={()=> setOpen(true)}>
+            Ver pista
+        </button>
         <div className={styles.grid}>
           <label htmlFor="hash">Introduce la clave secreta</label>
           <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Clave" value={hash} onChange={e => setHash(e.target.value)}></input>
